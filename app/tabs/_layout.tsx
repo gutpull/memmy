@@ -17,6 +17,16 @@ const Layout = () => {
                 }}
             />
             <Tabs.Screen
+                name={"search"}
+                options={{
+                    headerShown: false,
+                    tabBarLabel: "Search",
+                    tabBarIcon: (({color}) => (
+                        <Icon as={Ionicons} name={"search-outline"} size={7} color={color} />
+                    ))
+                }}
+            />
+            <Tabs.Screen
                 name={"settings"}
                 options={{
                     headerShown:false,
